@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 236px;
+    }
+    .flex {
+        display: flex;
+    }
+    .px236 {
+        padding-inline: 236px;
+    }
+    .inputCont {
+        position: relative;
+
+    }
+    .inputCont > input {
+        background-color: rgba(234, 236, 238, 1);
+        padding: 14px, 22px, 14px, 22px;
+        border-radius: 10px;
+    }
+    .inputCont > img {
+        position: absolute;
+        right: 10px;
+    }
+.cityImgCont {
+  background-color: rgba(8, 122, 238, 1);
+  border-radius: 15px;
+  position: relative;
+}
+
+.cityImgCont > img{
+  mix-blend-mode: multiply;
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+.w18 {
+    width: 18px;
+}
+</style>
+<body>
+    <header class="header">
+        <div>Вузы России</div>
+        <div>Профессии</div>
+        <div>Программы</div>
+        <div>Специальности</div>
+        <div>Олимпиады</div>
+        <div>Поиски ЕГЭ</div>
+        <div>Сервисы</div>
+        <div>Абитуриентам</div>
+        <div>Статьи</div>
+        <div>Календарь</div>
+    </header>
+    <section class="firstSection px236">
+        <div class="flex">
+            <div class="imgLogo"><img src="assets/first_section/img/lancmanschool -maincolorlanchman_logo.png" alt="lancmanschool_logo"></div>
+            <div class="inputCont">
+                <img src="assets/first_section/img/icon-searchsearch_icon.png" alt="search_icon">
+                <input type="text" name="findInput" id="findInput" value="Поиск">
+            </div>
+            <div class="contacts flex">
+                <div class="city">
+                    <img src="assets/first_section/img/iconcity_icon.png" alt="icon_city_place">
+                    <span>Москва</span>
+                </div>
+                <div class="mail">
+                    <img src="assets/first_section/img/mail_icon.png" alt="mail_icon">
+                    <span>info@lancmanschool.ru</span>
+                </div>
+                <div class="phone">
+                    <img src="assets/first_section/img/icon-call.png" alt="icon-call">
+                    <span>8 (495) 127-04-68</span>
+                    </div>
+                <div>|</div>
+                <div class="logIn">
+                    <img src="assets/first_section/img/iconlogIn_icon.png" alt="logIn_icon">
+                    <span>ВОЙТИ</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="cityImgCont">
+                <img src="assets/first_section/img/image 2.png" alt="img2">
+                <div class="text-container">
+                    <h1>Университет «LancmanSchool»</h1>
+                    <button class="active" type="button">
+                        <img class="w18" src="assets/first_section/img/Star 1star_icon.png" alt="start_icon">
+                        <span>4.8</span>
+                        <span> 116 отзывов</span>
+                    </button>
+                    <button type="button">Негосударственный</button>
+                    <button type="button">Москва</button>
+                </div>
+            </div>
+            <div></div>
+            <div></div>
+        </div>
+        <div></div>
+    </section>
+</body>
+</html>
