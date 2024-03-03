@@ -34,7 +34,6 @@
 .cityImgCont {
   background-color: rgba(8, 122, 238, 1);
   border-radius: 15px;
-  position: relative;
 }
 
 .cityImgCont > img{
@@ -57,6 +56,20 @@
 }
 .w18 {
     width: 18px;
+}
+
+.relative {
+    position: relative;
+}
+.fDirectionColumn {
+    flex-direction: column;
+}
+.bgmanCont {
+    width: 477px;
+    height: 398px;
+}
+.bgmanCont > img {
+    width: 100%;
 }
 </style>
 <body>
@@ -100,7 +113,7 @@
             </div>
         </div>
         <div class="flex">
-            <div class="cityImgCont">
+            <div class="cityImgCont relative">
                 <img src="assets/first_section/img/image 2.png" alt="img2">
                 <div class="text-container">
                     <h1>Университет «LancmanSchool»</h1>
@@ -113,10 +126,78 @@
                     <button type="button">Москва</button>
                 </div>
             </div>
-            <div></div>
-            <div></div>
+            <div class="relative">
+                <img src="assets/first_section/img/image 5student.png" alt="students">
+                 <div class="text-container">
+                    <button type="button">Пробное занятие</button>
+                </div>
+            </div>
+            <div class="flex fDirectionColumn">
+                <div class="stInfo">
+                    <div>136</div>
+                    <div>программ</div>
+                </div>
+                <div class="stInfo">
+                    <div>от 64 000</div>
+                    <div>рублей в год</div>
+                </div>
+                <div class="stInfo">
+                    <div>90</div>
+                    <div>бюджетных мест</div>
+                </div>
+                <div class="stInfo">
+                    <div>52 615</div>
+                    <div>платных мест</div>
+                </div>
+
+            </div>
         </div>
-        <div></div>
+
+        <div>
+            <h1>Средний бал ЕГЭ</h1>
+            <div class="flex">
+                <div class="flex">
+                    <div>
+                        <div>Год</div>
+                        <div>Бюджет</div>
+                        <div>Платное</div>
+                    </div>
+                    <div>
+                        <div>2022</div>
+                        <div>72.21</div>
+                        <div>65.4</div>
+                    </div>
+                    <div>
+                        <div>2021</div>
+                        <div>67.18</div>
+                        <div>70.55</div>
+                    </div>
+                    <div>
+                        <div>2020</div>
+                        <div>нет данных</div>
+                        <div>71.38</div>
+                    </div>
+                    <div>
+                        <div>2019</div>
+                        <div>нет данных</div>
+                        <div>67.91</div>
+                    </div>
+                    <div>
+                        <div>2018</div>
+                        <div>нет данных</div>
+                        <div>67.91</div>
+                    </div>
+                    <div>
+                        <div>2017</div>
+                        <div>нет данных</div>
+                        <div>67.91</div>
+                    </div>
+                </div>
+                <div class="bgmanCont">
+                    <img src="assets/first_section/img/main_bg_man 1.png" alt="bg_man">
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>
