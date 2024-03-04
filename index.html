@@ -3,45 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lancman School</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="assets/first_section/styles/style.css" rel="stylesheet">
     <link href="assets/second_section/styles/style.css" rel="stylesheet">
+    <link href="assets/third_section/styles/style.css" rel="stylesheet">
 </head>
 <style>
-.thirdSection > div:nth-child(1) {
-    align-items: center;
-    justify-content: space-between;
-}
 
-.thirdSection {
-    padding: 70px 236px;
-}
-.card {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.cardCont {
-    margin-top: 30px;
-    justify-content: space-between;
-}
-.cardImg {
-    border-radius: 10px;
-}
-.cardImg > img {
-    border-radius: 10px;
-}
-.titleCard {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-.additionalTextCard {
-    color: rgba(32, 38, 45, 1);
-    font-size: 15px;
-    opacity: 60%;
-}
 </style>
 <body>
     <header class="header">
@@ -181,7 +150,7 @@
             <img src="assets/second_section/img/students_cap.png" alt="">
             <img src="assets/second_section/img/blur3 4.png" alt="">
         </div>
-        <div class="flex">
+        <div class="flex alignCenter">
             <h1>Об университете «Lancman School»</h1>
             <div class="btnContS">
                 <button type="button" class="btn rBtn">Негосударственный</button>
@@ -319,7 +288,88 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section class="fourthSection">
+        <div class="flex">
+            <h1>Специальности</h1>
+            <button class="btn blueCol btnAdditionalSec2_3 blueBack" type="button">Смотреть все (5)</button>
+        </div>
+        <div class="cardCont flex">
+            <div class="card">
+                <div class="cardImg">
+                    <img src="assets/third_section/img/bg_4_1.png" alt="bg_img1">
+                </div>
+                <div>
+                    <div class="titleCard">Название программы</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardImg">
+                    <img src="assets/third_section/img/bg_4_2.png" alt="bg_img2">
+                </div>
+                <div>
+                    <div class="titleCard">Название программы</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardImg">
+                    <img src="assets/third_section/img/bg_4_3.png" alt="bg_img3">
+                </div>
+                <div>
+                    <div class="titleCard">Название программы</div>
+                </div>
+            </div>
 
+        </div>
+    </section>
+    <section class="fifthSection">
+        <div class="flex">
+            <h1>Новости</h1>
+            <button class="btn blueCol btnAdditionalSec2_3 blueBack" type="button">Все новости (53)</button>
+        </div>
+
+        <div class="cardCont flex">
+            <div class="card">
+                <div class="cardImg relative">
+                    <img src="assets/third_section/img/bg_5_1.png" alt="bg_img5_1">
+                    <div class="cardTextOnImgCont">
+                        <div>Новости вузов</div>
+                        <div>16.06.2022</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="titleCard marginBt15">Новый сезон Тренировок по алгоритмам 5.0 для студентов</div>
+                    <div class="additionalTextCard">С 1 марта Яндекс запускает новый сезон Тренировок по алгоритмам 5.0 для студентов. Пятый сезон, где студенты факультета IT получат персональные тренировки и пройдут пробные алгоритмические собеседования.Успешно пройденные собеседования будут засчитаны при отборе на стажировку или в штат Яндекса.</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardImg relative">
+                    <img src="assets/third_section/img/bg_5_2.png" alt="bg_img5_2">
+                    <div class="cardTextOnImgCont">
+                        <div>Новости вузов</div>
+                        <div>16.06.2022</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="titleCard marginBt15">Спикер на Всероссийской профориентационной неделе «Найди свое призвание!»</div>
+                    <div class="additionalTextCard">Декан Инна Петровна Баранова выступила спикером на Всероссийской профориентационной неделе «Найди свое призвание!».</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardImg relative">
+                    <img src="assets/third_section/img/bg_5_3.png" alt="bg_img5_3">
+                    <div class="cardTextOnImgCont">
+                        <div>Новости вузов</div>
+                        <div>16.06.2022</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="titleCard marginBt15">Представители факультета ИТ посетили международную конференцию по «1С»</div>
+                    <div class="additionalTextCard">Преподаватели и студенты факультета информационных технологий Университета «Синергия» приняли участие в XXIV Международной научно-практической конференции «1С» по теме «Технологии 1С для развития экономики данных и гиперавтоматизации образования».</div>
+                </div>
+            </div>
+
+        </div>
     </section>
 </body>
 </html>
