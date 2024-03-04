@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./taiwind.css" rel="stylesheet">
 </head>
 <style>
+    * {
+        box-sizing: border-box;
+    }
+
     .header {
         display: flex;
         justify-content: space-between;
@@ -20,17 +25,24 @@
     }
     .inputCont {
         position: relative;
-
+        flex-grow: 5;
     }
     .inputCont > input {
         background-color: rgba(234, 236, 238, 1);
-        padding: 14px, 22px, 14px, 22px;
+        padding: 14px 22px 14px 22px;
         border-radius: 10px;
+        width: 100%;
+        height: 48px;
+        border: 0;
+        color: rgba(32, 38, 45, 1);
+
     }
     .inputCont > img {
         position: absolute;
-        right: 10px;
+        right: 25px;
+        top: 15px;
     }
+
 .cityImgCont {
   background-color: rgba(8, 122, 238, 1);
   border-radius: 15px;
@@ -38,24 +50,24 @@
 
 .cityImgCont > img{
   mix-blend-mode: multiply;
-  transform: rotateY(180deg);
+
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
-
 }
 
 .text-container {
   position: absolute;
-  top: 50%;
+  top: 0%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
   color: white;
   text-align: center;
 }
 .w18 {
     width: 18px;
+    margin-right: 1.63px;
 }
 
 .relative {
@@ -67,9 +79,178 @@
 .bgmanCont {
     width: 477px;
     height: 398px;
+    position: absolute;
+    top: -144px;
+    right: -106px;
 }
 .bgmanCont > img {
     width: 100%;
+}
+.contactCont {
+    align-items: center;
+    gap: 40px;
+    padding: 30.5px 0;
+}
+.contacts {
+    gap: 10px;
+}
+.contacts > div {
+    padding: 14px;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    align-items: center;
+    display: flex;
+
+}
+.mail {
+    display: flex;
+}
+
+.firstSection > div:nth-child(2) {
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.firstSection > div:nth-child(3) {
+}
+.stInfoCont > div{
+    height: 94.5px;
+}
+.stInfoCont > div:first-child{
+    background-color: rgba(8, 122, 238, 1);
+}
+.stInfoCont > div:nth-child(2){
+    background-color: rgba(151, 71, 255, 1);
+}
+.stInfoCont > div:nth-child(3){
+    background-color: rgba(12, 205, 147, 1);
+}
+.stInfoCont > div:last-child{
+    background-color: rgba(255, 227, 98, 1);
+}
+.stInfo {
+    border-radius: 15px;
+    padding: 19.75px 30px;
+}
+.stInfoCont {
+    gap: 30px;
+    flex: 1;
+}
+.stInfo > div:first-child {
+    color: rgba(255, 255, 255, 1);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32.68px;
+}
+.stInfo > div:last-child {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+.stLast > div:first-child {
+    color: rgba(32, 38, 45, 1);
+}
+.stLast > div:last-child {
+    color: rgba(32, 38, 45, 0.7);
+
+}
+.section1_2 > div:nth-child(2) {
+    background-color: rgba(8, 122, 238, 1);
+    border-radius: 15px;
+}
+.section1_2 > div:nth-child(2) > img {
+    border-radius: 15px;
+    height: 100%;
+}
+/* btn active img2btn */
+.btn {
+    border-radius: 10px;
+    background-color: rgba(255, 227, 98, 1);
+    border: 0;
+}
+.img2btn {
+    padding: 18px 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.img2cont {
+    top: 73.5%;
+}
+.img1cont {
+    width: 100%;
+    padding: 122px 87px 122px 90px;
+
+}
+.img2title {
+    font-size: 59px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.rBtn {
+    padding: 12px 16px;
+    gap: 6px;
+    align-items: center;
+}
+
+.contBtnImg1{
+    gap: 12px;
+}
+.ratingText {
+    font-weight: 700;
+    font-size: 16px;
+}
+.inactive {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(32, 38, 45, 0.6);
+    padding: 12px 16px;
+}
+.section1_3 {
+    padding: 80px 0;
+}
+h1 {
+    color: rgba(32, 38, 45, 1);
+    margin: 0;
+    font-weight: 700;
+    font-size: 45px;
+}
+.mb30 {
+    margin-bottom: 30px;
+}
+.statYearsTable {
+    background-color: rgba(239, 247, 255, 1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.infoByYears {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    font-size: 18px;
+    flex: 0 1 75%;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.infoByYears > div {
+    display: flex;
+    gap: 33px;
+    margin: 40px 0 40px 40px;
+    flex-direction: column;
+}
+.infoByYears > div > div:last-child {
+    color: rgba(32, 38, 45, 1);
+    font-weight: 700;
+}
+.infoByYears > div > div:nth-child(2) {
+    color: rgba(32, 38, 45, .4);
+    font-weight: 400;
+}
+.withData {
+    color: rgba(8, 122, 238, 1) !important;
+    font-weight: 700 !important;
 }
 </style>
 <body>
@@ -86,7 +267,7 @@
         <div>Календарь</div>
     </header>
     <section class="firstSection px236">
-        <div class="flex">
+        <div class="flex contactCont">
             <div class="imgLogo"><img src="assets/first_section/img/lancmanschool -maincolorlanchman_logo.png" alt="lancmanschool_logo"></div>
             <div class="inputCont">
                 <img src="assets/first_section/img/icon-searchsearch_icon.png" alt="search_icon">
@@ -105,34 +286,39 @@
                     <img src="assets/first_section/img/icon-call.png" alt="icon-call">
                     <span>8 (495) 127-04-68</span>
                     </div>
-                <div>|</div>
+                <div><img src="assets/first_section/img/Rectangle 277.png" alt="rectanle 277"></div>
                 <div class="logIn">
                     <img src="assets/first_section/img/iconlogIn_icon.png" alt="logIn_icon">
                     <span>ВОЙТИ</span>
                 </div>
             </div>
         </div>
-        <div class="flex">
+        <div class="flex section1_2">
             <div class="cityImgCont relative">
                 <img src="assets/first_section/img/image 2.png" alt="img2">
-                <div class="text-container">
-                    <h1>Университет «LancmanSchool»</h1>
-                    <button class="active" type="button">
-                        <img class="w18" src="assets/first_section/img/Star 1star_icon.png" alt="start_icon">
-                        <span>4.8</span>
-                        <span> 116 отзывов</span>
-                    </button>
-                    <button type="button">Негосударственный</button>
-                    <button type="button">Москва</button>
+                <div class="text-container img1cont">
+                    <div class="img2title">Университет «LancmanSchool»</div>
+                    <div class="flex contBtnImg1">
+
+                        <button class="active btn rBtn flex m-10" type="button">
+                            <div class="flex">
+                                <img class="w18" src="assets/first_section/img/Star 1star_icon.png" alt="start_icon">
+                                <span class="ratingText">4.8</span>
+                            </div>
+                            <div> 116 отзывов</div>
+                        </button>
+                        <button class="btn inactive" type="button">Негосударственный</button>
+                        <button class="btn inactive" type="button">Москва</button>
+                    </div>
                 </div>
             </div>
             <div class="relative">
                 <img src="assets/first_section/img/image 5student.png" alt="students">
-                 <div class="text-container">
-                    <button type="button">Пробное занятие</button>
+                 <div class="text-container img2cont">
+                    <button type="button" class="btn active img2btn">Пробное занятие</button>
                 </div>
             </div>
-            <div class="flex fDirectionColumn">
+            <div class="flex fDirectionColumn stInfoCont">
                 <div class="stInfo">
                     <div>136</div>
                     <div>программ</div>
@@ -145,7 +331,7 @@
                     <div>90</div>
                     <div>бюджетных мест</div>
                 </div>
-                <div class="stInfo">
+                <div class="stInfo stLast">
                     <div>52 615</div>
                     <div>платных мест</div>
                 </div>
@@ -153,23 +339,23 @@
             </div>
         </div>
 
-        <div>
-            <h1>Средний бал ЕГЭ</h1>
-            <div class="flex">
-                <div class="flex">
+        <div class="section1_3">
+            <h1 class="mb30">Средний бал ЕГЭ</h1>
+            <div class="flex statYearsTable">
+                <div class="flex infoByYears">
                     <div>
                         <div>Год</div>
-                        <div>Бюджет</div>
+                        <div class="withData">Бюджет</div>
                         <div>Платное</div>
                     </div>
                     <div>
                         <div>2022</div>
-                        <div>72.21</div>
+                        <div class="withData">72.21</div>
                         <div>65.4</div>
                     </div>
                     <div>
                         <div>2021</div>
-                        <div>67.18</div>
+                        <div class="withData">67.18</div>
                         <div>70.55</div>
                     </div>
                     <div>
