@@ -1,8 +1,26 @@
+@import url(https://db.onlinewebfonts.com/c/9b72b5e8dafcf26afb1b22f21acf3c58?family=Cera+PRO+Medium);
+@font-face {
+    font-family: "Cera PRO Medium";
+    src: url("https://db.onlinewebfonts.com/t/9b72b5e8dafcf26afb1b22f21acf3c58.eot");
+    src: url("https://db.onlinewebfonts.com/t/9b72b5e8dafcf26afb1b22f21acf3c58.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/9b72b5e8dafcf26afb1b22f21acf3c58.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/9b72b5e8dafcf26afb1b22f21acf3c58.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/9b72b5e8dafcf26afb1b22f21acf3c58.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/9b72b5e8dafcf26afb1b22f21acf3c58.svg#Cera PRO Medium")format("svg");
+}
+body {
+    font-family: "Cera PRO Medium";
+    color: rgba(32, 38, 45, 1);
+}
 * {
     box-sizing: border-box;
 }
 
+.header > div {
+    opacity: 70%;
+ }
 .header {
+    font-weight: 500;
     display: flex;
     justify-content: space-between;
     padding: 16px 236px;

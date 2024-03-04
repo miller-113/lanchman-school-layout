@@ -1,0 +1,61 @@
+.footer {
+    padding: 60px 236px;
+    background-color: rgba(227, 241, 255, 1);
+    display: flex;
+    gap: 30px;
+    /* overflow: hidden; */
+}
+.footerSectionTitle {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.contactsCont > div, .rightsReserved > div {
+    padding: 14px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+.rightsReserved > div {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    padding: 14px 0;
+}
+.contactsCont, .rightsReserved {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.imgFlower {
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+    right: 12.2%;
+}
+.shutterstockImg {
+    z-index: 10;
+    position: absolute;
+    top: -80px;
+    right: 20.8%;
+}
+.lsIcon {
+    z-index: 5;
+    position: absolute;
+    top: -73px;
+    right: 22.8%;
+}
+.blur3_3 {
+    z-index: 3;
+    position: absolute;
+    top: 170px;
+    right: 32.1%;
+}
+.blur3_2 {
+    z-index: 3;
+    position: absolute;
+    top: -55px;
+    right: 13%;
+}

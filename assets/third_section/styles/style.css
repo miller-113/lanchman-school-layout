@@ -3,8 +3,11 @@
     justify-content: space-between;
 }
 
-.thirdSection, .fourthSection, .fifthSection {
+.thirdSection, .fourthSection {
     padding: 70px 236px;
+}
+.fifthSection {
+    padding: 70px 236px 100px;
 }
 .fourthSection {
     border: 1px solid rgba(234, 236, 238, 1);
@@ -18,6 +21,7 @@
 .cardCont {
     margin-top: 30px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .cardImg {
     border-radius: 10px;
