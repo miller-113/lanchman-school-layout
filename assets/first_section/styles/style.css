@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 236px;
+}
+.flex {
+    display: flex;
+}
+.px236 {
+    padding-inline: 236px;
+}
+.inputCont {
+    position: relative;
+    flex-grow: 5;
+}
+.inputCont > input {
+    background-color: rgba(234, 236, 238, 1);
+    padding: 14px 22px 14px 22px;
+    border-radius: 10px;
+    width: 100%;
+    height: 48px;
+    border: 0;
+    color: rgba(32, 38, 45, 1);
+
+}
+.inputCont > img {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+}
+
+.cityImgCont {
+  background-color: rgba(8, 122, 238, 1);
+  border-radius: 15px;
+}
+
+.cityImgCont > img{
+  mix-blend-mode: multiply;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.text-container {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  color: white;
+  text-align: center;
+}
+.w18 {
+    width: 18px;
+    margin-right: 1.63px;
+}
+
+.relative {
+    position: relative;
+}
+.fDirectionColumn {
+    flex-direction: column;
+}
+.bgmanCont {
+    width: 477px;
+    height: 398px;
+    position: absolute;
+    top: -144px;
+    right: -106px;
+}
+.bgmanCont > img {
+    width: 100%;
+}
+.contactCont {
+    align-items: center;
+    gap: 40px;
+    padding: 30.5px 0;
+}
+.contacts {
+    gap: 10px;
+}
+.contacts > div {
+    padding: 14px;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    align-items: center;
+    display: flex;
+
+}
+.mail {
+    display: flex;
+}
+
+.firstSection > div:nth-child(2) {
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.firstSection > div:nth-child(3) {
+}
+.stInfoCont > div{
+    height: 94.5px;
+}
+.stInfoCont > div:first-child{
+    background-color: rgba(8, 122, 238, 1);
+}
+.stInfoCont > div:nth-child(2){
+    background-color: rgba(151, 71, 255, 1);
+}
+.stInfoCont > div:nth-child(3){
+    background-color: rgba(12, 205, 147, 1);
+}
+.stInfoCont > div:last-child{
+    background-color: rgba(255, 227, 98, 1);
+}
+.stInfo {
+    border-radius: 15px;
+    padding: 19.75px 30px;
+}
+.stInfoCont {
+    gap: 30px;
+    flex: 1;
+}
+.stInfo > div:first-child {
+    color: rgba(255, 255, 255, 1);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32.68px;
+}
+.stInfo > div:last-child {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+.stLast > div:first-child {
+    color: rgba(32, 38, 45, 1);
+}
+.stLast > div:last-child {
+    color: rgba(32, 38, 45, 0.7);
+
+}
+.section1_2 > div:nth-child(2) {
+    background-color: rgba(8, 122, 238, 1);
+    border-radius: 15px;
+}
+.section1_2 > div:nth-child(2) > img {
+    border-radius: 15px;
+    height: 100%;
+}
+/* btn active img2btn */
+.btn {
+    border-radius: 10px;
+    background-color: rgba(255, 227, 98, 1);
+    border: 0;
+}
+.img2btn {
+    padding: 18px 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.img2cont {
+    top: 73.5%;
+}
+.img1cont {
+    width: 100%;
+    padding: 122px 87px 122px 90px;
+
+}
+.img2title {
+    font-size: 59px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.rBtn {
+    padding: 12px 16px;
+    gap: 6px;
+    align-items: center;
+}
+
+.contBtnImg1{
+    gap: 12px;
+}
+.ratingText {
+    font-weight: 700;
+    font-size: 16px;
+}
+.inactive {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(32, 38, 45, 0.6);
+    padding: 12px 16px;
+}
+.section1_3 {
+    padding: 80px 0;
+}
+h1 {
+    color: rgba(32, 38, 45, 1);
+    margin: 0;
+    font-weight: 700;
+    font-size: 45px;
+}
+.mb30 {
+    margin-bottom: 30px;
+}
+.statYearsTable {
+    background-color: rgba(239, 247, 255, 1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.infoByYears {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    font-size: 18px;
+    flex: 0 1 75%;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.infoByYears > div {
+    display: flex;
+    gap: 33px;
+    margin: 40px 0 40px 40px;
+    flex-direction: column;
+}
+.infoByYears > div > div:last-child {
+    color: rgba(32, 38, 45, 1);
+    font-weight: 700;
+}
+.infoByYears > div > div:nth-child(2) {
+    color: rgba(32, 38, 45, .4);
+    font-weight: 400;
+}
+.withData {
+    color: rgba(8, 122, 238, 1) !important;
+    font-weight: 700 !important;
+}

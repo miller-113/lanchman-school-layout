@@ -1,0 +1,126 @@
+.secondSection {
+    background-color: rgba(239, 247, 255, 1);
+    position: relative;
+    padding: 80px 236px;
+}
+.btnContS > button {
+    font-size: 16px;
+    font-weight: 700;
+    height: 100%;
+    color: rgba(255, 255, 255, 1);
+}
+.btnContS > button:first-child {
+    background-color: rgba(8, 122, 238, 1);
+    margin: 0 20px 0 40px;
+}
+.btnContS > button:nth-child(2) {
+    background-color: rgba(12, 205, 147, 1);
+}
+.schoolInfoItem {
+    border-radius: 15px;
+    padding: 30px 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 1);
+}
+.infoIcon {
+    display: flex;
+    width: 110px;
+    height: 110px;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.aboutSchoolCont {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+.textInfoS2 > div:first-child {
+    font-size: 18px;
+    font-weight: 700;
+}
+.textInfoS2 > div:nth-child(2) {
+    font-size: 16px;
+    margin-top: 4px;
+    opacity: 70%;
+}
+.orangeCol {
+    color: rgba(255, 179, 54, 1);
+}
+.orangeBack {
+    background-color: rgba(255, 179, 54, .1);
+}
+.blueCol {
+    color: rgba(8, 122, 238, 1);
+}
+.blueBack {
+    background-color: rgba(8, 122, 238, .1);
+}
+.greenCol {
+    color: rgba(12, 205, 147, 1);
+}
+.greenBack {
+    background-color: rgba(12, 205, 147, .1);
+}
+.redCol {
+    color: rgba(243, 71, 63, 1);
+}
+.redBack {
+    background-color: rgba(243, 71, 63, .1);
+}
+.purpleCol {
+    color: rgba(151, 71, 255, 1);
+}
+.purpleBack {
+    background-color: rgba(151, 71, 255, .1);
+}
+.btnAdditionalSec2_3 {
+    padding: 8px 12px;
+}
+.classImgCont > img {
+    mix-blend-mode: soft-light;
+}
+.classImgCont {
+    background-color: rgba(8, 122, 238, 1);
+    border-radius: 15px;
+    gap: 15px;
+}
+.img3cont {
+    left: 0;
+    transform: translate(0%, 0%);
+    display: flex;
+    align-items: center;
+    margin: 40px 0 40px 30px;
+    gap: 15px;
+}
+.img3cont > div:nth-child(1) {
+    text-align: left;
+    font-size: 26px;
+    font-weight: 700;
+}
+.sec2_3 {
+    gap: 30px;
+}
+.aboutSchoolAddtionalInfo {
+    font-size: 18px;
+    line-height: 25.2px;
+    margin-bottom: 10px;
+}
+.imgBlock > img:nth-child(1) {
+    z-index: 4;
+}
+.imgBlock > img:nth-child(2) {
+    top: 150px;
+}
+.imgBlock > img {
+    position: absolute;
+}
+.imgBlock {
+    position: absolute;
+    top: -90px;
+    left: 0px;
+}
