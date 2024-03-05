@@ -26,6 +26,7 @@ body {
     padding: 16px 236px;
     flex-wrap: wrap;
     gap: 10px;
+    width: 100%;
 }
 .flex {
     display: flex;
@@ -101,7 +102,7 @@ body {
     align-items: center;
     gap: 40px;
     padding: 30.5px 0;
-    flex: wrap;
+    flex-wrap: wrap;
 }
 .contacts {
     gap: 10px;
@@ -168,6 +169,9 @@ body {
 .stLast > div:last-child {
     color: rgba(32, 38, 45, 0.7);
 
+}
+.section1_2 {
+    justify-content: center;
 }
 .section1_2 > div:nth-child(2) {
     background-color: rgba(8, 122, 238, 1);
@@ -273,22 +277,34 @@ h1 {
         .footer > div:nth-child(3) {
         display: none;
     }
+    .aboutSchoolCont {
+        justify-content: center !important;
+    }
+    .cardCont {
+        justify-content: space-evenly !important;
+        gap: 30px;
+    }
 }
 @media (max-width: 1200px) {
     .bgmanCont {
         display: none;
+    }
+    #navbarNavAltMarkup {
+        padding-right: 30px;
     }
     .header, .firstSection {
         padding-inline: 0;
     }
     .secondSection > div:nth-child(2) {
         flex-wrap: wrap;
+        justify-content: center;
     }
     .secondSection {
         padding: 80px 20px !important;
     }
     .section1_2 {
         justify-content: center;
+        padding-inline: 20px;
     }
     .contacts > div:nth-child(4) {
         display: none;
@@ -315,6 +331,7 @@ h1 {
     .cardCont {
         justify-content: center !important;
         gap: 30px;
+
     }
 
     .footer {
@@ -322,6 +339,11 @@ h1 {
         justify-content: flex-start;
         padding: 60px 20px !important;
     }
+    .stInfoCont {
+        padding: 0 30px;
+    }
 
-
+    .contactCont {
+        padding-inline: 20px;
+    }
 }
