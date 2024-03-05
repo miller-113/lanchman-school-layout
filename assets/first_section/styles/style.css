@@ -92,7 +92,7 @@ body {
     width: 477px;
     height: 398px;
     position: absolute;
-    top: -144px;
+    top: -125px;
     right: -106px;
 }
 .bgmanCont > img {
@@ -270,12 +270,37 @@ h1 {
     color: rgba(8, 122, 238, 1) !important;
     font-weight: 700 !important;
 }
+.infoByYears > div:last-child {
+    margin-right: 150px;
+}
+.infoByYears {
+    /* min-width: 1600px; */
+    flex-wrap: nowrap;
+    overflow: auto;
+    width: calc(100% + 50%);
+}
+.infoByYears > div > div:nth-child(2) {
 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 
 @media (max-width: 1400px) {
-        .footer > div:nth-child(3) {
-        display: none;
+    .footer  {
+        flex-direction: column;
+        padding-bottom: 0px !important;
+
+    }
+    .footer > div:nth-child(3) {
+        position: relative;
+        /* display: none; */
+        height: 411px;
+    }
+    .shutterstockImg {
+        bottom: 0px;
+        top: initial !important;
     }
     .aboutSchoolCont {
         justify-content: center !important;
@@ -284,13 +309,28 @@ h1 {
         justify-content: space-evenly !important;
         gap: 30px;
     }
+    .lsIcon {
+        top: 0 !important;
+    }
+    .blur3_2{
+        top: 0 !important;
+        right: 20px !important;
+    }
+    .blur3_3{
+        top: 200px !important;
+        right: 50% !important;
+    }
+
+
 }
+
 @media (max-width: 1200px) {
+
     .bgmanCont {
-        display: none;
+        /* display: none; */
     }
     #navbarNavAltMarkup {
-        padding-right: 30px;
+        padding-inline: 30px;
     }
     .header, .firstSection {
         padding-inline: 0;
@@ -310,7 +350,7 @@ h1 {
         display: none;
     }
     .infoByYears {
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
     }
     .img1cont {
         padding: 100px 20px 0;
@@ -337,7 +377,7 @@ h1 {
     .footer {
         flex-wrap: wrap;
         justify-content: flex-start;
-        padding: 60px 20px !important;
+        padding: 60px 20px 0 !important;
     }
     .stInfoCont {
         padding: 0 30px;
@@ -346,8 +386,24 @@ h1 {
     .contactCont {
         padding-inline: 20px;
     }
+    .mb30 {
+        margin-left: 20px;
+    }
+    .section1_3 {
+        overflow-x: hidden; /* Скрыть изображение по горизонтали */
+        overflow-y: visible;
+        padding-bottom: 120px;
+    }
+    .btnContS {
+        margin-top: 20px;
+    }
 }
 @media (max-width: 600px) {
+
+    .bgmanCont{
+        opacity: 40%;
+    }
+
     h1 {
         font-size: 25px;
     }
