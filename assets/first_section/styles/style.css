@@ -130,8 +130,7 @@ nav {
     gap: 30px;
     flex-wrap: wrap;
 }
-.firstSection > div:nth-child(3) {
-}
+
 .stInfoCont > div{
     height: 94.5px;
 }
@@ -278,7 +277,6 @@ h1 {
     margin-right: 150px;
 }
 .infoByYears {
-    /* min-width: 1600px; */
     flex-wrap: nowrap;
     overflow: auto;
     width: calc(100% + 50%);
@@ -299,7 +297,6 @@ h1 {
     }
     .footer > div:nth-child(3) {
         position: relative;
-        /* display: none; */
         height: 411px;
     }
     .shutterstockImg {
@@ -334,9 +331,7 @@ h1 {
         display: grid !important;
         grid-template-columns: repeat(3, 1fr);
     }
-    .bgmanCont {
-        /* display: none; */
-    }
+
     #navbarNavAltMarkup {
         padding-inline: 30px;
     }
@@ -357,9 +352,7 @@ h1 {
     .contacts > div:nth-child(4) {
         display: none;
     }
-    .infoByYears {
-        /* flex-wrap: wrap; */
-    }
+
     .img1cont {
         padding: 100px 20px 0;
     }
@@ -398,7 +391,7 @@ h1 {
         margin-left: 20px;
     }
     .section1_3 {
-        overflow-x: hidden; /* Скрыть изображение по горизонтали */
+        overflow-x: hidden;
         overflow-y: visible;
         padding-bottom: 120px;
     }
