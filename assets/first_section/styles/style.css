@@ -24,6 +24,8 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 16px 236px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 .flex {
     display: flex;
@@ -34,6 +36,7 @@ body {
 .inputCont {
     position: relative;
     flex-grow: 5;
+    flex: 1 0 130px;
 }
 .inputCont > input {
     background-color: rgba(234, 236, 238, 1);
@@ -98,9 +101,12 @@ body {
     align-items: center;
     gap: 40px;
     padding: 30.5px 0;
+    flex: wrap;
 }
 .contacts {
     gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .contacts > div {
     padding: 14px;
@@ -259,4 +265,63 @@ h1 {
 .withData {
     color: rgba(8, 122, 238, 1) !important;
     font-weight: 700 !important;
+}
+
+
+
+@media (max-width: 1400px) {
+        .footer > div:nth-child(3) {
+        display: none;
+    }
+}
+@media (max-width: 1200px) {
+    .bgmanCont {
+        display: none;
+    }
+    .header, .firstSection {
+        padding-inline: 0;
+    }
+    .secondSection > div:nth-child(2) {
+        flex-wrap: wrap;
+    }
+    .secondSection {
+        padding: 80px 20px !important;
+    }
+    .section1_2 {
+        justify-content: center;
+    }
+    .contacts > div:nth-child(4) {
+        display: none;
+    }
+    .infoByYears {
+        flex-wrap: wrap;
+    }
+    .img1cont {
+        padding: 100px 20px 0;
+    }
+    .imgBlock {
+        top: -180px !important;
+    }
+    .sec2_3 > div:nth-child(2) > img{
+        width: 100%;
+        height: -webkit-fill-available;
+    }
+    .sec2_3 > div:nth-child(2){
+        width: 100%;
+    }
+    .thirdSection, .fourthSection, .fifthSection{
+        padding: 70px 20px !important;
+    }
+    .cardCont {
+        justify-content: center !important;
+        gap: 30px;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 60px 20px !important;
+    }
+
+
 }

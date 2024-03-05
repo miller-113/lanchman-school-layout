@@ -39,6 +39,8 @@
     display: flex;
     justify-content: space-between;
     margin: 50px 0;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .textInfoS2 > div:first-child {
     font-size: 18px;
@@ -89,6 +91,7 @@
     background-color: rgba(8, 122, 238, 1);
     border-radius: 15px;
     gap: 15px;
+    height: 146px;
 }
 .img3cont {
     left: 0;
@@ -105,6 +108,7 @@
 }
 .sec2_3 {
     gap: 30px;
+    flex-wrap: wrap;
 }
 .aboutSchoolAddtionalInfo {
     font-size: 18px;
