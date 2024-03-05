@@ -347,3 +347,39 @@ h1 {
         padding-inline: 20px;
     }
 }
+@media (max-width: 600px) {
+    h1 {
+        font-size: 25px;
+    }
+    .img2title {
+        font-size: 20px;
+    }
+    .cityImgCont {
+        height: 350px;
+
+    }
+    .img1cont {
+        padding: 60px 20px;
+    }
+    .section1_2 img {
+        width: 100%;
+    }
+    .contBtnImg1 {
+        flex-wrap: wrap;
+    }
+    .cardImg > img {
+        width: 100%;
+    }
+    .thirdSection > div:nth-child(1), .fourthSection > div:nth-child(1), .fifthSection > div:nth-child(1)   {
+        flex-wrap: wrap;
+    }
+    .secondSection > div:nth-child(2) {
+        gap: 15px;
+    }
+    .btnContS {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+}
