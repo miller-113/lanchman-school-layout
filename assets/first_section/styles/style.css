@@ -15,6 +15,9 @@ body {
 * {
     box-sizing: border-box;
 }
+.gap10 {
+    gap: 10px;
+}
 nav {
     padding: 8px 20px;
 }
@@ -287,8 +290,38 @@ h1 {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.stInfoCont {
+    padding: 0 0px;
+    min-width: 240px;
+    max-width: 1080px;
+}
+.secondSection > div:nth-child(2) {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 40px;
+}
+.thirdSection > .cardCont {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+.fourthSection > .cardCont, .fifthSection > .cardCont {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center; */
+    gap: 20px;
+        justify-content: center;
+}
 
 
+@media (max-width: 1900px) {
+    .thirdSection > .cardCont {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+}
 @media (max-width: 1400px) {
     .footer  {
         flex-direction: column;
@@ -327,6 +360,9 @@ h1 {
 
 
 @media (max-width: 1200px) {
+    .mb30, h1 {
+        font-size: 35px;
+    }
     .aboutSchoolCont {
         display: grid !important;
         grid-template-columns: repeat(3, 1fr);
@@ -338,10 +374,7 @@ h1 {
     .header, .firstSection {
         padding-inline: 0;
     }
-    .secondSection > div:nth-child(2) {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+
     .secondSection {
         padding: 80px 20px !important;
     }
@@ -367,7 +400,7 @@ h1 {
         width: 100%;
     }
     .thirdSection, .fourthSection, .fifthSection{
-        padding: 70px 20px !important;
+        padding: 70px 55px !important;
     }
     .cardCont {
         justify-content: center !important;
@@ -400,16 +433,25 @@ h1 {
     }
     .stInfoCont {
         padding: 0 0px;
-        min-width: 200px;
     }
 }
 @media (max-width: 800px) {
+    .thirdSection > .cardCont {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 20px;
+    }
         .aboutSchoolCont {
 
         grid-template-columns: repeat(2, 1fr);
     }
  }
+
 @media (max-width: 600px) {
+    .img3cont {
+        margin: 44px 0 34px 15px !important;
+    }
     .section1_2 {
         display: grid !important;
     }
@@ -423,7 +465,7 @@ h1 {
         right: -293px;
     }
 
-    h1 {
+    h1, .mb30 {
         font-size: 20px;
     }
     .img2title {
@@ -447,6 +489,7 @@ h1 {
     }
     .thirdSection > div:nth-child(1), .fourthSection > div:nth-child(1), .fifthSection > div:nth-child(1)   {
         flex-wrap: wrap;
+        gap: 10px;
     }
     .secondSection > div:nth-child(2) {
         gap: 15px;
@@ -454,7 +497,23 @@ h1 {
     .btnContS {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 10px;
     }
+}
+
+@media (max-width: 370px) {
+    .cardTextOnImgCont > div{
+        font-size: 12px !important;
+    }
+    .cardTextOnImgCont{
+        top: unset !important;
+        bottom: 2px;
+    }
+}
+@media (max-width: 500px) {
+    .thirdSection > .cardCont {
+        justify-items: stretch;
+    }
+
 }

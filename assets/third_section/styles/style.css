@@ -17,6 +17,9 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background-color: unset;
+    background-clip: border-box;
+    border: unset;
 }
 .cardCont {
     margin-top: 30px;
