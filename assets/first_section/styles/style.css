@@ -15,6 +15,9 @@ body {
 * {
     box-sizing: border-box;
 }
+nav {
+    padding: 8px 20px;
+}
 
 .header > div {
     opacity: 70%;
@@ -97,6 +100,7 @@ body {
 }
 .bgmanCont > img {
     width: 100%;
+    height: 100%;
 }
 .contactCont {
     align-items: center;
@@ -324,8 +328,12 @@ h1 {
 
 }
 
-@media (max-width: 1200px) {
 
+@media (max-width: 1200px) {
+    .aboutSchoolCont {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
+    }
     .bgmanCont {
         /* display: none; */
     }
@@ -397,11 +405,30 @@ h1 {
     .btnContS {
         margin-top: 20px;
     }
+    .stInfoCont {
+        padding: 0 0px;
+        min-width: 200px;
+    }
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+        .aboutSchoolCont {
 
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+@media (max-width: 600px) {
+    .section1_2 {
+        display: grid !important;
+    }
+    .aboutSchoolCont {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
     .bgmanCont{
-        opacity: 40%;
+        /* opacity: 40%; */
+        top: -140px;
+        height: 200px;
+        opacity: 60%
     }
 
     h1 {
