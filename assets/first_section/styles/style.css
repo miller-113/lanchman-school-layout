@@ -153,10 +153,7 @@ nav {
     border-radius: 15px;
     padding: 19.75px 30px;
 }
-.stInfoCont {
-    gap: 30px;
-    flex: 1;
-}
+
 .stInfo > div:first-child {
     color: rgba(255, 255, 255, 1);
     font-size: 26px;
@@ -293,7 +290,9 @@ h1 {
 .stInfoCont {
     padding: 0 0px;
     min-width: 240px;
-    max-width: 1080px;
+    /* max-width: 1080px; */
+    gap: 30px;
+    flex: 1;
 }
 .secondSection > div:nth-child(2) {
         flex-wrap: wrap;
