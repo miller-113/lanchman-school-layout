@@ -399,7 +399,7 @@ h1 {
         width: 100%;
     }
     .thirdSection, .fourthSection, .fifthSection{
-        padding: 70px 55px !important;
+        padding: 70px 20px !important;
     }
     .cardCont {
         justify-content: center !important;
