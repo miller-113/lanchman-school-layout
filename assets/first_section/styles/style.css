@@ -204,7 +204,9 @@ nav {
 
 }
 .img2title {
-    font-size: 59px;
+    /* font-size: 59px; */
+        /* font-size: 20px !important; */
+    font-size: clamp(25px, 6vw, 50px) !important;
     font-weight: 700;
     text-align: left;
     margin-bottom: 30px;
