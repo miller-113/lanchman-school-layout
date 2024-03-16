@@ -4,7 +4,6 @@
     padding: 80px 236px;
 }
 .btnContS > button {
-    font-size: 16px;
     font-weight: 700;
     height: 100%;
     color: rgba(255, 255, 255, 1);
@@ -48,7 +47,6 @@
     font-weight: 700;
 }
 .textInfoS2 > div:nth-child(2) {
-    font-size: 16px;
     margin-top: 4px;
     opacity: 70%;
 }

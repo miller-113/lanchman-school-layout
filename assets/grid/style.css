@@ -1,5 +1,9 @@
     .section1_2 > div > img {
-            width: -webkit-fill-available;
+        width: -webkit-fill-available;
+    }
+    .section1_2 {
+        max-width: 1520px;
+        margin: 0 auto;
     }
     .contactCont {
         display: grid;
@@ -30,10 +34,6 @@
     .shutterstockImg {
         top: -40px;
     }
-
-
-
-    @media (max-width: 1850px) {
         .cityImgCont {
             grid-column: 1/-2;
         }
@@ -47,7 +47,8 @@
         .img2title {
             font-size: 40px;
         }
-    }
+
+
     @media (max-width: 1650px) {
         .blur3_3{
             right: 22.1%;

@@ -8,13 +8,7 @@
     url("https://db.onlinewebfonts.com/t/9b72b5e8dafcf26afb1b22f21acf3c58.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/9b72b5e8dafcf26afb1b22f21acf3c58.svg#Cera PRO Medium")format("svg");
 }
-body {
-    font-family: "Cera PRO Medium";
-    color: rgba(32, 38, 45, 1);
-}
-* {
-    box-sizing: border-box;
-}
+
 .gap10 {
     gap: 10px;
 }
@@ -102,7 +96,6 @@ nav {
     right: -106px;
 }
 .bgmanCont > img {
-    /* width: 100%; */
     height: 100%;
 }
 .contactCont {
@@ -117,14 +110,14 @@ nav {
     justify-content: space-between;
 }
 .contacts > div {
-    padding: 14px;
+    padding: 0.87rem;
     gap: 10px;
-    font-size: 14px;
+    font-size: 0.87rem;
     font-weight: 700;
     align-items: center;
     display: flex;
-
 }
+
 .mail {
     display: flex;
 }
@@ -156,13 +149,12 @@ nav {
 
 .stInfo > div:first-child {
     color: rgba(255, 255, 255, 1);
-    font-size: 26px;
+    font-size: calc(var(--base-font-size) * 1.62);
     font-weight: 700;
     line-height: 32.68px;
 }
 .stInfo > div:last-child {
     color: rgba(255, 255, 255, 0.7);
-    font-size: 16px;
     font-weight: 400;
     line-height: 22.4px;
 }
@@ -192,7 +184,6 @@ nav {
 }
 .img2btn {
     padding: 18px 20px;
-    font-size: 16px;
     font-weight: 700;
 }
 .img2cont {
@@ -204,8 +195,6 @@ nav {
 
 }
 .img2title {
-    /* font-size: 59px; */
-        /* font-size: 20px !important; */
     font-size: clamp(25px, 6vw, 50px) !important;
     font-weight: 700;
     text-align: left;
@@ -222,7 +211,6 @@ nav {
 }
 .ratingText {
     font-weight: 700;
-    font-size: 16px;
 }
 .inactive {
     color: rgba(255, 255, 255, 1);
@@ -236,7 +224,6 @@ h1 {
     color: rgba(32, 38, 45, 1);
     margin: 0;
     font-weight: 700;
-    font-size: 45px;
 }
 .mb30 {
     margin-bottom: 30px;
@@ -252,10 +239,8 @@ h1 {
     display: flex;
     flex: 1;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: calc(var(--base-font-size) * 1.12);
     flex: 0 1 75%;
-    justify-content: space-between;
-    font-size: 18px;
 }
 .infoByYears > div {
     display: flex;
@@ -284,7 +269,6 @@ h1 {
     width: calc(100% + 50%);
 }
 .infoByYears > div > div:nth-child(2) {
-
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -292,7 +276,6 @@ h1 {
 .stInfoCont {
     padding: 0 0px;
     min-width: 240px;
-    /* max-width: 1080px; */
     gap: 30px;
     flex: 1;
 }
@@ -307,27 +290,17 @@ h1 {
     justify-items: center;
 }
 .fourthSection > .cardCont, .fifthSection > .cardCont {
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center; */
     gap: 20px;
-        justify-content: center;
+    justify-content: center;
 }
 
 
-@media (max-width: 1900px) {
-    .thirdSection > .cardCont {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
 
-}
+
 @media (max-width: 1400px) {
     .footer  {
         flex-direction: column;
         padding-bottom: 0px !important;
-
     }
     .footer > div:nth-child(3) {
         position: relative;
@@ -355,15 +328,11 @@ h1 {
         top: 200px !important;
         right: 50% !important;
     }
-
-
 }
 
 
 @media (max-width: 1200px) {
-    .mb30, h1 {
-        font-size: 35px;
-    }
+
     .aboutSchoolCont {
         display: grid !important;
         grid-template-columns: repeat(3, 1fr);
@@ -406,7 +375,6 @@ h1 {
     .cardCont {
         justify-content: center !important;
         gap: 30px;
-
     }
 
     .footer {
@@ -466,15 +434,11 @@ h1 {
         right: -293px;
     }
 
-    h1, .mb30 {
-        font-size: 20px;
-    }
-    .img2title {
-        font-size: 20px;
+    h1, .mb30, .img2title {
+        font-size: 1.56rem;
     }
     .cityImgCont {
         height: 350px;
-
     }
     .img1cont {
         padding: 60px 20px;
@@ -503,15 +467,6 @@ h1 {
     }
 }
 
-@media (max-width: 370px) {
-    .cardTextOnImgCont > div{
-        font-size: 12px !important;
-    }
-    .cardTextOnImgCont{
-        top: unset !important;
-        bottom: 2px;
-    }
-}
 @media (max-width: 500px) {
     .thirdSection > .cardCont {
         justify-items: stretch;
